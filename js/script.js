@@ -1,5 +1,7 @@
-//const agePassenger = prompt ('Quanti anni hai?');
-//const distanceKm = prompt ('Quanti km vuole percorrere?');
+/*
+const agePassenger = prompt ('Quanti anni hai?');
+const distanceKm = prompt ('Quanti km vuole percorrere?');
+
 
 let scontoGiovani = 0.2; // 17 anni o meno
 let scontoAnziani = 0.4; // 66 anni o più
@@ -8,17 +10,17 @@ let scontoTotaleA = kmPrice * distanceKm * scontoAnziani;
 let scontoTotaleS = kmPrice * distanceKm * scontoGiovani;
 let price = kmPrice * distanceKm;
 
-if (agePassenger > 65) {
-    price = ((kmPrice * distanceKm) - scontoTotaleA)
-} else if (agePassenger < 18) {
-    price = ((kmPrice * distanceKm) - scontoTotaleS)
-}
-
-
-
-output = `
-${price}
-`
-
-console.log(price)
 document.getElementById(`price`).innerHTML += price.toFixed(2);
+*/
+
+
+/*  
+<document.getElementById("btn1")> con questo creo il bottone in JS
+<.addEventListener> con questo dico al bottone di ascoltare un evento
+<("click")> quando si clicca sul bottone, voglio che accada qualcosa
+<,function(){}> con questo gli dico "Esegui questo codice"
+*/
+
+document.getElementById("btn1").addEventListener("click", function(){
+    
+})
