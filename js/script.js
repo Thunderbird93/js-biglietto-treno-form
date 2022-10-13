@@ -28,5 +28,6 @@ document.getElementById("btn1").addEventListener("click", function(){
     //Qui ho preso il valore senza però conservarlo da nessuna parte.
     // Aggiungo una variabile (let) e le do un nome (esempio: persona)
     let persona = document.getElementById("inputName").value;
+    
     document.getElementById("outputName").innerHTML += persona;
 })
