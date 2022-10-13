@@ -21,13 +21,12 @@ document.getElementById(`price`).innerHTML += price.toFixed(2);
 <("click")> quando si clicca sul bottone, voglio che accada qualcosa
 <,function(){}> con questo gli dico "Esegui questo codice"
 */
-
 document.getElementById("btn1").addEventListener("click", function(){
-    //come per il bottone, però qui prendo il "value" del bottone (ciò che ha scritto l'utente).
+    //come per il bottone, però qui inserisco il "value"(input) del bottone (ciò che ha scritto l'utente).
     // document.getElementById("inputName").value;
-    //Qui ho preso il valore senza però conservarlo da nessuna parte.
-    // Aggiungo una variabile (let) e le do un nome (esempio: persona)
+    //Ho preso il valore senza però conservarlo da nessuna parte.
+    //Aggiungo una variabile (let) e le do un nome (esempio: persona)
     let persona = document.getElementById("inputName").value;
-    
+    //Qui prendo l'ID per l'Output "outputName" nell' HTML ed aggiungo ad esso il "value" di "persona"
     document.getElementById("outputName").innerHTML += persona;
 })
