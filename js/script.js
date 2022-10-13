@@ -1,4 +1,4 @@
-/*
+/* ---------------------Esercizio Precedente----------------------------------
 const agePassenger = prompt ('Quanti anni hai?');
 const distanceKm = prompt ('Quanti km vuole percorrere?');
 
@@ -15,6 +15,13 @@ document.getElementById(`price`).innerHTML += price.toFixed(2);
 
 // -------------------------------NEW------------------------------------------
 
+let scontoGiovani = 0.20;
+let scontoAnziani = 0.40;
+let kmPrice = 0.21;
+let yPrice = price - (price * scontoGiovani);
+
+
+
 /*  
 <document.getElementById("btn1")> con questo creo il bottone in JS usando l'ID presente in html
 <.addEventListener> con questo dico al bottone di ascoltare un evento
@@ -27,6 +34,17 @@ document.getElementById("btn1").addEventListener("click", function(){
     //Ho preso il valore senza però conservarlo da nessuna parte.
     //Aggiungo una variabile (let) e le do un nome (esempio: persona)
     let persona = document.getElementById("inputName").value;
+    let distanza = document.getElementById("inputKm").value;
+    let anni = document.getElementById("inputRange").value;
+    let price = distanza * kmPrice;
+
+    if (anni === "minore") {
+        price = (yPrice)
+    } else if (anni === "pensionato") {
+        price = (1 - scontoAnziani)
+    };
+
     //Qui prendo l'ID per l'Output "outputName" nell' HTML ed aggiungo ad esso il "value" di "persona"
     document.getElementById("outputName").innerHTML += persona;
+    document.getElementById(`price`).innerHTML += price.toFixed(2);
 })
